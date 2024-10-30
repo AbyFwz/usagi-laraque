@@ -1,0 +1,101 @@
+customer_id,customer_name,item_id,item_name,price
+18,Budi Suhardi,1,Sate Ayam,41521.53
+39,Joko Sari,2,Mie Goreng,95906.03
+41,Ani Prasetyo,3,Nasi Campur,62127.05
+45,Budi Susanto,4,Gado-Gado,90131.87
+20,Ani Wati,5,Bakso,69982.61
+32,Lina Putra,6,Bakso,79299.02
+37,Budi Wati,7,Ikan Bakar,31009.76
+25,Siti Sari,8,Rendang,91151.63
+29,Agus Setiawan,9,Martabak,33619.99
+27,Ani Sari,10,Rendang,99361.43
+22,Ani Prasetyo,11,Ayam Penyet,40141.17
+37,Budi Wati,12,Mie Goreng,23181.41
+10,Rani Utami,13,Rendang,86556.85
+31,Rani Sari,14,Ayam Penyet,95320.39
+50,Siti Putra,15,Ayam Penyet,79302.23
+27,Wahyu Nugroho,16,Ayam Penyet,73033.49
+48,Lina Halim,17,Rendang,43429.83
+8,Lina Putra,18,Gado-Gado,67831.44
+46,Lina Putra,19,Rendang,93486.26
+25,Joko Susanto,20,Nasi Campur,53676.54
+34,Wahyu Halim,21,Ayam Penyet,91966.35
+5,Agus Setiawan,22,Nasi Goreng,39068.55
+50,Joko Suhardi,23,Sate Ayam,72616.75
+39,Agus Sari,24,Ayam Penyet,67823.75
+31,Ani Nugroho,25,Nasi Goreng,62324.34
+8,Budi Setiawan,26,Sate Ayam,95358.4
+14,Rani Prasetyo,27,Ikan Bakar,64211.08
+50,Joko Putra,28,Bakso,60746.86
+27,Siti Halim,29,Nasi Campur,46741.1
+28,Joko Putra,30,Ikan Bakar,84125.16
+5,Lina Nugroho,31,Ikan Bakar,45919.64
+50,Lina Sari,32,Rendang,92724.88
+13,Ani Utami,33,Martabak,54098.19
+31,Lina Wati,34,Martabak,46967.71
+1,Rani Susanto,35,Nasi Campur,70058.35
+35,Lina Setiawan,36,Gado-Gado,20229.4
+26,Ani Halim,37,Nasi Campur,65831.59
+47,Wahyu Putra,38,Ikan Bakar,47236.88
+33,Budi Halim,39,Rendang,39431.45
+1,Dewi Sari,40,Gado-Gado,96304.02
+32,Hendra Halim,41,Ayam Penyet,37185.27
+28,Dewi Susanto,42,Ikan Bakar,80417.93
+39,Lina Setiawan,43,Ikan Bakar,50036.47
+16,Dewi Utami,44,Nasi Campur,86337.2
+38,Rani Susanto,45,Sate Ayam,29717.14
+25,Dewi Putra,46,Rendang,76827.25
+22,Siti Prasetyo,47,Nasi Goreng,90015.52
+28,Wahyu Susanto,48,Nasi Campur,35586.71
+13,Dewi Utami,49,Ayam Penyet,96181.27
+47,Dewi Sari,50,Ikan Bakar,92623.34
+20,Joko Halim,51,Nasi Goreng,71794.58
+37,Dewi Putra,52,Nasi Campur,88449.32
+18,Rani Putra,53,Bakso,57835.55
+49,Siti Setiawan,54,Nasi Campur,75584.27
+32,Wahyu Wati,55,Ikan Bakar,44442.52
+19,Siti Nugroho,56,Rendang,97940.86
+11,Dewi Wati,57,Nasi Campur,30339.72
+10,Lina Wati,58,Ikan Bakar,69908.16
+40,Joko Nugroho,59,Gado-Gado,66830.73
+30,Rani Setiawan,60,Gado-Gado,76371.34
+31,Agus Putra,61,Nasi Campur,24292.05
+47,Lina Sari,62,Ikan Bakar,75911.24
+23,Rani Utami,63,Martabak,92112.22
+42,Joko Utami,64,Ayam Penyet,45554.89
+48,Siti Setiawan,65,Sate Ayam,57329.19
+12,Budi Putra,66,Nasi Campur,46238.33
+43,Wahyu Utami,67,Nasi Goreng,46910.07
+20,Wahyu Prasetyo,68,Gado-Gado,28524.32
+45,Ani Wati,69,Ayam Penyet,22527.04
+4,Rani Putra,70,Rendang,61469.07
+30,Ani Nugroho,71,Gado-Gado,32796.98
+16,Siti Nugroho,72,Ayam Penyet,96051.67
+19,Budi Prasetyo,73,Ikan Bakar,97226.45
+22,Joko Wati,74,Bakso,39234.43
+42,Lina Setiawan,75,Martabak,68682.76
+32,Joko Setiawan,76,Mie Goreng,36731.55
+11,Hendra Nugroho,77,Martabak,44838.57
+31,Joko Sari,78,Sate Ayam,34200.1
+8,Siti Nugroho,79,Mie Goreng,91926.18
+30,Siti Putra,80,Ayam Penyet,47300.18
+4,Rani Sari,81,Bakso,94499.44
+17,Rani Suhardi,82,Ikan Bakar,96302.39
+6,Hendra Halim,83,Mie Goreng,68009.1
+34,Agus Putra,84,Nasi Campur,27506.07
+44,Budi Suhardi,85,Nasi Campur,23916.83
+22,Rani Suhardi,86,Nasi Goreng,36721.7
+1,Wahyu Setiawan,87,Gado-Gado,78148.34
+33,Siti Nugroho,88,Bakso,86070.12
+14,Joko Setiawan,89,Ayam Penyet,45502.15
+46,Ani Nugroho,90,Ayam Penyet,40485.73
+45,Wahyu Putra,91,Martabak,52578.29
+19,Hendra Susanto,92,Bakso,26629.67
+35,Ani Suhardi,93,Ayam Penyet,83936.75
+29,Dewi Suhardi,94,Rendang,81670.75
+41,Budi Halim,95,Nasi Goreng,99561.64
+17,Joko Halim,96,Gado-Gado,94866.36
+1,Rani Utami,97,Nasi Goreng,38485.87
+10,Agus Susanto,98,Ikan Bakar,80674.85
+40,Rani Setiawan,99,Ikan Bakar,49985.9
+5,Dewi Halim,100,Martabak,61882.32
