@@ -1,8 +1,4 @@
-Here’s a sample `README.md` for your project:
-
----
-
-# RabbitMQ Laravel Producer-Consumer Example
+# RabbitMQ Laravel Producer-Consumer Example (Usagi-LaraQue)
 
 This project demonstrates a basic producer-consumer architecture using **Laravel** and **RabbitMQ**. The producer service retrieves orders from a database and publishes them as messages to RabbitMQ every 10 seconds, while a consumer service listens to the queue and stores these messages in a database if they are unique.
 
@@ -18,7 +14,7 @@ This project demonstrates a basic producer-consumer architecture using **Laravel
 
    ```bash
    git clone <repository-url>
-   cd rabbitmq-laravel-demo
+   cd usagi-laraque
    ```
 
 2. **Install Laravel Dependencies**
@@ -40,13 +36,19 @@ This project demonstrates a basic producer-consumer architecture using **Laravel
    DB_PASSWORD=your_database_password
    ```
 
-4. **Run Migrations**
+4. **Generate Application Key**
+
+   ```bash
+   php artisan key:generate
+   ```
+
+5. **Run Migrations**
 
    ```bash
    php artisan migrate
    ```
 
-5. **Start RabbitMQ with Docker**
+6. **Start RabbitMQ with Docker**
 
    Create a `docker-compose.yml` file for RabbitMQ:
    ```yaml
@@ -67,9 +69,9 @@ This project demonstrates a basic producer-consumer architecture using **Laravel
    docker-compose up -d
    ```
 
-6. **Seed Orders Data (Optional)**
+7. **Seed Mockup Orders Data (Optional)**
 
-   Add some sample data to the `orders` table by creating and running a Laravel seeder, or manually insert records in the database for testing.
+   Add some sample data to the `mock_orders` table by creating and running a Laravel seeder, or data produced will be random.
 
 ## Producer Service
 
@@ -81,13 +83,13 @@ php artisan produce:order
 
 ### Producer Details
 
-- **Fetches** all records from the `orders` table.
+- **Fetches** all records from the `mock_orders` table or random data.
 - **Publishes** each order to the RabbitMQ `food_orders` queue in JSON format.
 - **Waits 10 seconds** before sending the next order.
 
 ## Consumer Service
 
-The consumer listens to the `food_orders` queue and processes each message. It checks for duplicates and saves unique orders to the database.
+The consumer listens to the `food_orders` queue and processes each message. It checks for duplicates and saves unique orders to the `orders` table in the database.
 
 To run the consumer:
 
@@ -127,3 +129,4 @@ Given more time, the following improvements could be made:
 ---
 
 This setup provides a simple yet effective system to handle real-time order processing with RabbitMQ and Laravel!
+Created by Abyan Fawwaz
