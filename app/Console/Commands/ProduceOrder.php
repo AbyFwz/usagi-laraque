@@ -23,24 +23,43 @@ class ProduceOrder extends Command
         // Fetch all orders from the database
         $orders = MockOrder::all();
 
-        foreach ($orders as $order) {
-            // Prepare message payload
-            $orderData = [
-                'customer_id' => $order->customer_id,
-                'customer_name' => $order->customer_name,
-                'item_id' => $order->item_id,
-                'item_name' => $order->item_name,
-                'price' => $order->price,
-            ];
+        if (!$orders) {
+            foreach ($orders as $order) {
+                // Prepare message payload
+                $orderData = [
+                    'customer_id' => $order->customer_id,
+                    'customer_name' => $order->customer_name,
+                    'item_id' => $order->item_id,
+                    'item_name' => $order->item_name,
+                    'price' => $order->price,
+                ];
 
-            $message = new AMQPMessage(json_encode($orderData), ['delivery_mode' => 2]);
-            $channel->basic_publish($message, '', 'food_orders');
+                $message = new AMQPMessage(json_encode($orderData), ['delivery_mode' => 2]);
+                $channel->basic_publish($message, '', 'food_orders');
 
-            $this->info("Produced Order: " . json_encode($orderData));
+                $this->info("Produced Order: " . json_encode($orderData));
 
-            // Wait 10 seconds before sending the next message
-            sleep(10);
+                // Wait 10 seconds before sending the next message
+                sleep(10);
+            }
+        } else {
+            while (true) {
+                // Generate a random order if data in mock_order table is empty
+                $order = [
+                    'customer_id' => rand(1000, 9999),
+                    'customer_name' => 'Customer ' . rand(1, 100),
+                    'item_id' => rand(1, 50),
+                    'item_name' => 'Item ' . rand(1, 50),
+                    'price' => rand(5, 100)
+                ];
+                $message = new AMQPMessage(json_encode($order), ['delivery_mode' => 2]);
+                $channel->basic_publish($message, '', 'food_orders');
+
+                $this->info("Produced Order: " . json_encode($order));
+                sleep(10); // Send every 10 seconds
+            }
         }
+
 
         $channel->close();
         $connection->close();
